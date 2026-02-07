@@ -1,6 +1,5 @@
 
 import {
-  App,
   Editor,
   Plugin,
   EditorSuggest,
@@ -90,12 +89,11 @@ class SlashBlocksSuggest extends EditorSuggest<BlockOption> {
 }
 
 export default class SlashBlocksPlugin extends Plugin {
-  async onload(): Promise<void> {
+  onload(): void {
     this.registerEditorSuggest(new SlashBlocksSuggest(this.app));
-    console.log("Slash Blocks loaded");
   }
 
   onunload(): void {
-    console.log("Slash Blocks unloaded");
+    // cleanup handled by Obsidian
   }
 }
