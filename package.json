@@ -1,0 +1,16 @@
+{
+  "name": "obsidian-slash-blocks",
+  "version": "0.1.0",
+  "description": "Superlist-style slash menu for content blocks in Obsidian.",
+  "main": "main.js",
+  "scripts": {
+    "dev": "esbuild src/main.ts --bundle --external:obsidian --format=cjs --outfile=main.js --watch",
+    "build": "esbuild src/main.ts --bundle --external:obsidian --format=cjs --outfile=main.js --minify"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.5",
+    "typescript": "^5.5.4",
+    "@types/node": "^20.14.9",
+    "obsidian": "^1.5.0"
+  }
+}

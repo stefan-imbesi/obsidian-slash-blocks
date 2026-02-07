@@ -1,0 +1,5 @@
+
+/* Optional: light styling for suggestion rows */
+.slash-blocks-item { display: flex; flex-direction: column; }
+.slash-blocks-label { font-weight: 500; }
+.slash-blocks-hint { opacity: 0.7; font-size: 12px; }
