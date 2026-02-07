@@ -1,0 +1,10 @@
+{
+  "id": "slash-blocks",
+  "name": "Slash Blocks",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Type `/` to open a Superlist\u2011style menu and insert content blocks (task, headings, lists, etc.).",
+  "author": "Stefan Imbesi",
+  "authorUrl": "https://github.com/stefan-imbesi",
+  "isDesktopOnly": false
+}
