@@ -37,7 +37,7 @@ class SlashBlocksSuggest extends EditorSuggest<BlockOption> {
   onTrigger(
     cursor: EditorPosition,
     editor: Editor,
-    file: TFile | null
+    _file: TFile | null
   ): EditorSuggestTriggerInfo | null {
     const line = editor.getLine(cursor.line);
     const left = line.substring(0, cursor.ch);
@@ -64,9 +64,9 @@ class SlashBlocksSuggest extends EditorSuggest<BlockOption> {
 
   renderSuggestion(value: BlockOption, el: HTMLElement): void {
     const container = el.createDiv({ cls: "slash-blocks-item" });
-    container.createEl("div", { text: value.label, cls: "slash-blocks-label" });
+    container.createDiv({ text: value.label, cls: "slash-blocks-label" });
     if (value.hint)
-      container.createEl("div", { text: value.hint, cls: "slash-blocks-hint" });
+      container.createDiv({ text: value.hint, cls: "slash-blocks-hint" });
   }
 
   selectSuggestion(value: BlockOption): void {
