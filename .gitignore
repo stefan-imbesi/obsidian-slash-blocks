@@ -14,3 +14,12 @@ Thumbs.db
 
 # Env
 .env
+
+# Build artifacts
+*.zip
+
+# Internal docs
+PUBLISHING.md
+
+# Obsidian plugin settings
+data.json

@@ -1,6 +1,8 @@
 # Slash Blocks
 
-Type `/` at the start of a line to open a quick-access block menu — inspired by Superlist and Notion. Pick a block type and the corresponding Markdown is inserted instantly.
+Type `/` at the start of a line to open a quick-access block menu — inspired by Superlist and Notion. Pick a block type and the corresponding Markdown is inserted instantly. Works on both desktop and mobile.
+
+![Demo](Demo.gif)
 
 ## Available blocks
 
